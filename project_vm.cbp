@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="project_vm" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/project_vm" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../../../../../lib/SDL2-devel-2.26.5-mingw/SDL2-2.26.5/x86_64-w64-mingw32/include" />
+					<Add directory="src/core" />
+					<Add directory="src/graphics" />
+					<Add directory="src/physics" />
+					<Add directory="scr/object" />
+					<Add directory="src/object" />
+					<Add directory="src/animation" />
+					<Add directory="src/event_handler" />
+					<Add directory="src/timer" />
+					<Add directory="src/map" />
+					<Add directory="src/vender/TinyXLM" />
+					<Add directory="src/vender" />
+					<Add directory="src/collision" />
+					<Add directory="src/camera" />
+					<Add directory="src/Factory" />
+					<Add directory="src/states" />
+					<Add directory="src/widgets" />
+					<Add directory="src/commentary" />
+					<Add directory="../../../../../lib/box2d-2.4.1/include/box2d" />
+					<Add directory="C:/lib/box2d-2.4.1/include/box2d" />
+					<Add directory="../../../../../lib/box2d-2.4.1/include" />
+					<Add directory="src/entity" />
+					<Add directory="src/event" />
+				</Compiler>
+				<Linker>
+					<Add option="-lmingw32" />
+					<Add option="-lSDL2" />
+					<Add option="-lSDL2main" />
+					<Add option="-lSDL2_image" />
+					<Add directory="../../../../../lib/SDL2-devel-2.26.5-mingw/SDL2-2.26.5/x86_64-w64-mingw32/lib" />
+					<Add directory="../../../../../lib/box2d-2.4.1/build" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/project_vm" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="src/core" />
+					<Add directory="graphics" />
+					<Add directory="src/graphics" />
+					<Add directory="src/physics" />
+					<Add directory="scr/object" />
+					<Add directory="src/object" />
+					<Add directory="src/Characters" />
+					<Add directory="src/animation" />
+					<Add directory="src/event_handler" />
+					<Add directory="src/timer" />
+					<Add directory="src/map" />
+					<Add directory="src/collision" />
+					<Add directory="src/Factory" />
+					<Add directory="src/states" />
+					<Add directory="src/widgets" />
+					<Add directory="src/commentary" />
+					<Add directory="src/entity" />
+					<Add directory="src/event" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=gnu++17" />
+			<Add option="-fexceptions" />
+			<Add directory="../../../../../lib/SDL2-devel-2.26.5-mingw/SDL2-2.26.5/x86_64-w64-mingw32/include" />
+			<Add directory="src/lib/TinyXLM" />
+			<Add directory="src/lib" />
+			<Add directory="src/collision" />
+			<Add directory="src/sounds" />
+		</Compiler>
+		<Linker>
+			<Add option="-lmingw32" />
+			<Add option="-lSDL2main" />
+			<Add option="-lSDL2.dll" />
+			<Add option="-luser32" />
+			<Add option="-lgdi32" />
+			<Add option="-lwinmm" />
+			<Add option="-lSDL2_mixer" />
+			<Add directory="../../../../../lib/SDL2-devel-2.26.5-mingw/SDL2-2.26.5/x86_64-w64-mingw32/lib" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Unit filename="src/animation/Animation.h" />
+		<Unit filename="src/animation/SequenceAnimation.cpp" />
+		<Unit filename="src/animation/SequenceAnimation.h" />
+		<Unit filename="src/animation/SpiritAnimation.cpp" />
+		<Unit filename="src/animation/SpiritAnimation.h" />
+		<Unit filename="src/camera/Camera.cpp" />
+		<Unit filename="src/camera/Camera.h" />
+		<Unit filename="src/collision/CollisionHandler.cpp" />
+		<Unit filename="src/collision/CollisionHandler.h" />
+		<Unit filename="src/core/Engine.cpp" />
+		<Unit filename="src/core/Engine.h" />
+		<Unit filename="src/entity/Entity.h" />
+		<Unit filename="src/entity/Player.h" />
+		<Unit filename="src/entity/Vegito.cpp" />
+		<Unit filename="src/entity/Vegito.h" />
+		<Unit filename="src/event/Event.cpp" />
+		<Unit filename="src/event/Event.h" />
+		<Unit filename="src/factory/ObjectFactory.cpp" />
+		<Unit filename="src/factory/ObjectFactory.h" />
+		<Unit filename="src/graphics/TextureManager.cpp" />
+		<Unit filename="src/graphics/TextureManager.h" />
+		<Unit filename="src/map/GameMap.h" />
+		<Unit filename="src/map/Layers.h" />
+		<Unit filename="src/map/MapHandler.cpp" />
+		<Unit filename="src/map/MapHandler.h" />
+		<Unit filename="src/object/GameObject.h" />
+		<Unit filename="src/object/Object.h" />
+		<Unit filename="src/physics/Collider.h" />
+		<Unit filename="src/physics/RigidBody.h" />
+		<Unit filename="src/physics/Transform.h" />
+		<Unit filename="src/physics/Vector2D.h" />
+		<Unit filename="src/sounds/SoundsManager.cpp" />
+		<Unit filename="src/sounds/SoundsManager.h" />
+		<Unit filename="src/timer/Timer.cpp" />
+		<Unit filename="src/timer/Timer.h" />
+		<Unit filename="src/vender/TinyXLM/tinystr.cpp" />
+		<Unit filename="src/vender/TinyXLM/tinystr.h" />
+		<Unit filename="src/vender/TinyXLM/tinyxml.cpp" />
+		<Unit filename="src/vender/TinyXLM/tinyxml.h" />
+		<Unit filename="src/vender/TinyXLM/tinyxmlerror.cpp" />
+		<Unit filename="src/vender/TinyXLM/tinyxmlparser.cpp" />
+		<Unit filename="src/widgets/Button.cpp" />
+		<Unit filename="src/widgets/Button.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

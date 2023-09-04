@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animations>
+	<sequence id="vegito_guard" animation_speed ="255" frame_count ="2" width="50" height="50">
+		<frame texture_id="0" />	
+		<frame texture_id="1" />
+	</sequence>
+</animations>
