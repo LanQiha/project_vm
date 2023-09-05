@@ -25,6 +25,8 @@ bool CollisionHandler::MapCollision_BottomTile(SDL_Rect game_object)
 
     //std::cout << top_tile << " " << bottom_tile << std::endl;
 
+    //collision on the left, right and top tile.
+
     /*if(left_tile < 0)
     {
         left_tile = 0;

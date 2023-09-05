@@ -139,8 +139,6 @@
 		<Unit filename="src/vender/TinyXLM/tinyxml.h" />
 		<Unit filename="src/vender/TinyXLM/tinyxmlerror.cpp" />
 		<Unit filename="src/vender/TinyXLM/tinyxmlparser.cpp" />
-		<Unit filename="src/widgets/Button.cpp" />
-		<Unit filename="src/widgets/Button.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

@@ -1,22 +1,23 @@
 #include "Timer.h"
 
+//initialization of the single instance of the class
 Timer* Timer::s_instance = nullptr;
 
 Timer::Timer()
 {
-    m_delta_time = 0.0f;
-    m_last_time = 0.0f;
+    //initialization of the private variables
+    m_deltaTime = 0.0f;
+    m_lastTime = 0.0f;
 }
 
 void Timer::Tick()
 {
 
-    m_delta_time = (SDL_GetTicks() - m_last_time)*(TARGET_FPS/1000.0f);
+    m_deltaTime = (SDL_GetTicks() - m_lastTime)*(TARGET_FPS/1000.0f);
 
-    if(m_delta_time > TARGET_DELTA_TIME)
-    {
-        m_delta_time = TARGET_DELTA_TIME;
+    if(m_deltaTime > TARGET_DELTA_TIME) {
+        m_deltaTime = TARGET_DELTA_TIME;
     }
 
-    m_last_time = SDL_GetTicks();
+    m_lastTime = SDL_GetTicks();
 }

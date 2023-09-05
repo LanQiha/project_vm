@@ -17,8 +17,7 @@ using EffectMap = std::map <std::string, Mix_Chunk*>;
 class SoundsManager
 {
     public:
-        inline static SoundsManager* GetInstance()
-        {
+        inline static SoundsManager* GetInstance() {
             return s_instance = (s_instance != nullptr)? s_instance : new SoundsManager();
         }
 
@@ -34,8 +33,8 @@ class SoundsManager
         SoundsManager();
         static SoundsManager* s_instance;
 
-        MusicMap m_music_map;
-        EffectMap m_effect_map;
+        MusicMap m_musicMap;
+        EffectMap m_effectMap;
 };
 
 #endif // SOUNDSMANAGER_H

@@ -1,6 +1,6 @@
 #include "Event.h"
 
-Event* Event::s_instance = nullptr;
+Event* Event::s_instance = nullptr; //initialize the ptr as a nullptr
 
 const SDL_Scancode FORWARD = SDL_SCANCODE_E;
 const SDL_Scancode BACKWARD = SDL_SCANCODE_Q;
@@ -13,13 +13,13 @@ void Event::Listen()
     {
         switch(event.type)
         {
-            case SDL_QUIT :
+            case SDL_QUIT : //it closes the program if the user clicks on the cross
                 Engine::GetInstance()->Quit();
                 break;
-            case SDL_KEYDOWN :
+            case SDL_KEYDOWN : //call the KeyDown() function when the user presses a key
                 KeyDown();
                 break;
-            case SDL_KEYUP :
+            case SDL_KEYUP : //call the KeyUp() function when the user releases a key
                 KeyUp();
                 break;
         }
@@ -44,6 +44,7 @@ void Event::KeyDown()
     m_key_state = SDL_GetKeyboardState(nullptr);
 }
 
+//get the axis forward or backward
 int Event::GetAxis()
 {
     if(GetKeyDown(FORWARD))

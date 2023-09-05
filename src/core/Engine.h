@@ -15,15 +15,15 @@
 class Engine
 {
     public:
-        static Engine* GetInstance()
+        static Engine* GetInstance() //it is a singleton class
         {return s_instance = (s_instance != nullptr)? s_instance : new Engine();}
 
-        bool Init();
+        bool Init(); //function that initialize the engine
 
-        void Render();
-        void Update();
-        void Event();
-        void Clean();
+        void Render(); //function that render stuff on the screen
+        void Update(); //function that update the game
+        void Event(); //function that takes care of the keyboard system
+        void Clean(); //function that cleans dynamics variables
         void Quit();
 
         inline bool GetIsRunning(){return m_is_running;}
