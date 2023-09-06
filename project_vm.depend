@@ -472,12 +472,12 @@
 1687351746 c:\users\chera\documents\c++\project_vm\src\characters\character.h
 	"GameObject.h"
 
-1687438868 c:\users\chera\documents\c++\project_vm\src\object\gameobject.h
+1693993814 c:\users\chera\documents\c++\project_vm\src\object\gameobject.h
 	<SDL2/SDL.h>
 	"Object.h"
 	"Transform.h"
 
-1690120971 c:\users\chera\documents\c++\project_vm\src\object\object.h
+1693993298 c:\users\chera\documents\c++\project_vm\src\object\object.h
 
 1690131696 source:c:\users\chera\documents\c++\project_vm\src\graphics\texturemanager.cpp
 	"TextureManager.h"
@@ -512,10 +512,10 @@
 	<SDL2/SDL.h>
 	"engine.h"
 
-1687352977 source:c:\users\chera\documents\c++\project_vm\src\timer\timer.cpp
+1693918461 source:c:\users\chera\documents\c++\project_vm\src\timer\timer.cpp
 	"Timer.h"
 
-1693918299 c:\users\chera\documents\c++\project_vm\src\timer\timer.h
+1693918496 c:\users\chera\documents\c++\project_vm\src\timer\timer.h
 	<SDL2/SDL.h>
 
 1685182096 source:c:\users\chera\documents\c++\project_vm\src\map\tilelayer.cpp
