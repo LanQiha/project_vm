@@ -17,8 +17,9 @@
 class TextureManager
 {
     public:
-        static TextureManager* GetInstance()
-        {return s_instance = (s_instance != nullptr)? s_instance : new TextureManager();}
+        static TextureManager* GetInstance(){
+            return s_instance = (s_instance != nullptr)? s_instance : new TextureManager();
+        }
 
         bool Load(std::string id, std::string filename);
         bool ParseTexture(std::string source);

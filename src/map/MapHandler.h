@@ -1,15 +1,14 @@
 #ifndef MAPHANDLER_H
 #define MAPHANDLER_H
 
+#include <map>
 #include <string>
 #include <vector>
-#include <map>
 
-#include "Layers.h"
-#include "GameMap.h"
-#include "tinyxml.h"
 #include "TextureManager.h"
-
+#include "GameMap.h"
+#include "Layers.h"
+#include "tinyxml.h"
 
 struct Tileset
 {

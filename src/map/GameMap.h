@@ -10,25 +10,25 @@ class GameMap
     public:
         void render()
         {
-            for(unsigned int i=0; i<m_map_layers.size(); i++)
+            for(unsigned int i=0; i<m_mapLayers.size(); i++)
             {
-                m_map_layers[i]->render();
+                m_mapLayers[i]->render();
             }
         }
 
         void update()
         {
-            for(unsigned int i=0; i<m_map_layers.size(); i++)
+            for(unsigned int i=0; i<m_mapLayers.size(); i++)
             {
-                m_map_layers[i]->update();
+                m_mapLayers[i]->update();
             }
         }
 
-        std::vector<Layers*> get_map_layers(){return m_map_layers;}
+        std::vector<Layers*> GetMapLayers(){return m_mapLayers;}
 
     private:
         friend class MapParser;
-        std::vector<Layers*> m_map_layers;
+        std::vector<Layers*> m_mapLayers;
 };
 
 #endif // GAMEMAP_H
