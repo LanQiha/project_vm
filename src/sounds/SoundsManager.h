@@ -5,7 +5,7 @@
 #include <string>
 #include <map>
 
-#include <SDL2/SDL_mixer.h>
+#include <SDL_mixer.h>
 
 #define FREQ 44100
 #define CHUNK_SIZE 2048

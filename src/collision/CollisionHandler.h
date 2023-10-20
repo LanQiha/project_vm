@@ -1,7 +1,7 @@
 #ifndef COLLISIONHANDLER_H
 #define COLLISIONHANDLER_H
 
-#include <SDL2/SDL.h>
+#include <SDL.h>
 
 #include "GameMap.h"
 #include "Layers.h"

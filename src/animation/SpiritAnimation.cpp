@@ -1,6 +1,6 @@
 #include "SpiritAnimation.h"
 
-#include <SDL2/SDL.h>
+#include <SDL.h>
 
 #include "TextureManager.h"
 

@@ -2154,3 +2154,217 @@
 1693916325 source:c:\users\chera\documents\c++\project_vm\src\event\event.cpp
 	"Event.h"
 
+1693915404 source:c:\users\chera\documents\c++\projets en cours\project_vm\main.cpp
+	"engine.h"
+	"Timer.h"
+
+1697793727 c:\users\chera\documents\c++\projets en cours\project_vm\src\core\engine.h
+	<iostream>
+	<SDL.h>
+	<SDL_image.h>
+	"GameMap.h"
+
+1687352977 c:\users\chera\documents\c++\projets en cours\project_vm\src\map\gamemap.h
+	"Layers.h"
+	<vector>
+
+1687352977 c:\users\chera\documents\c++\projets en cours\project_vm\src\map\layers.h
+
+1697793680 c:\users\chera\documents\c++\projets en cours\project_vm\src\timer\timer.h
+	<SDL.h>
+
+1690136382 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\animation\sequenceanimation.cpp
+	"SequenceAnimation.h"
+	"TextureManager.h"
+	"tinyxml.h"
+
+1697793711 c:\users\chera\documents\c++\projets en cours\project_vm\src\animation\sequenceanimation.h
+	<string>
+	<vector>
+	<map>
+	<SDL.h>
+	"Animation.h"
+
+1690118693 c:\users\chera\documents\c++\projets en cours\project_vm\src\animation\animation.h
+
+1697793737 c:\users\chera\documents\c++\projets en cours\project_vm\src\graphics\texturemanager.h
+	<iostream>
+	<string>
+	<SDL.h>
+	<SDL_image.h>
+	"tinyxml.h"
+	<map>
+	"engine.h"
+
+1687352977 c:\users\chera\documents\c++\projets en cours\project_vm\src\vender\tinyxlm\tinyxml.h
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<string>
+	<iostream>
+	<sstream>
+	"tinystr.h"
+
+1687352977 c:\users\chera\documents\c++\projets en cours\project_vm\src\vender\tinyxlm\tinystr.h
+	<assert.h>
+	<string.h>
+
+1697793720 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\animation\spiritanimation.cpp
+	"SpiritAnimation.h"
+	<SDL.h>
+	"TextureManager.h"
+
+1697793703 c:\users\chera\documents\c++\projets en cours\project_vm\src\animation\spiritanimation.h
+	<string>
+	<SDL.h>
+	"Animation.h"
+
+1687521815 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\camera\camera.cpp
+	"Camera.h"
+
+1697793690 c:\users\chera\documents\c++\projets en cours\project_vm\src\camera\camera.h
+	<SDL.h>
+	"Vector2D.h"
+	"engine.h"
+
+1687352977 c:\users\chera\documents\c++\projets en cours\project_vm\src\physics\vector2d.h
+	<iostream>
+	<string>
+
+1693915494 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\collision\collisionhandler.cpp
+	"CollisionHandler.h"
+
+1697793694 c:\users\chera\documents\c++\projets en cours\project_vm\src\collision\collisionhandler.h
+	<SDL.h>
+	"GameMap.h"
+	"Layers.h"
+	"MapHandler.h"
+	"engine.h"
+	"TextureManager.h"
+
+1687352977 c:\users\chera\documents\c++\projets en cours\project_vm\src\map\maphandler.h
+	<string>
+	<vector>
+	<map>
+	"Layers.h"
+	"GameMap.h"
+	"tinyxml.h"
+	"TextureManager.h"
+
+1690138003 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\core\engine.cpp
+	"engine.h"
+	"MapHandler.h"
+	"Camera.h"
+	"SoundsManager.h"
+	"ObjectFactory.h"
+	"GameObject.h"
+	"TextureManager.h"
+	"Vector2D.h"
+	"Transform.h"
+	"Timer.h"
+	"Vegito.h"
+
+1697793742 c:\users\chera\documents\c++\projets en cours\project_vm\src\sounds\soundsmanager.h
+	<iostream>
+	<string>
+	<map>
+	<SDL_mixer.h>
+
+1687352977 c:\users\chera\documents\c++\projets en cours\project_vm\src\factory\objectfactory.h
+	<string>
+	<map>
+	<functional>
+	<memory>
+	"GameObject.h"
+
+1697793747 c:\users\chera\documents\c++\projets en cours\project_vm\src\object\gameobject.h
+	<SDL.h>
+	"Object.h"
+	"Transform.h"
+
+1693993298 c:\users\chera\documents\c++\projets en cours\project_vm\src\object\object.h
+
+1692466888 c:\users\chera\documents\c++\projets en cours\project_vm\src\physics\transform.h
+	"Vector2D.h"
+
+1697793699 c:\users\chera\documents\c++\projets en cours\project_vm\src\entity\vegito.h
+	<SDL.h>
+	"TextureManager.h"
+	"RigidBody.h"
+	"Animation.h"
+	"Collider.h"
+	"SpiritAnimation.h"
+	"SequenceAnimation.h"
+	"Player.h"
+	"RigidBody.h"
+
+1690201735 c:\users\chera\documents\c++\projets en cours\project_vm\src\physics\rigidbody.h
+	"Vector2D.h"
+	"Vegito.h"
+	<iostream>
+	"CollisionHandler.h"
+	"Collider.h"
+	"Event.h"
+
+1687352977 c:\users\chera\documents\c++\projets en cours\project_vm\src\physics\collider.h
+
+1697793707 c:\users\chera\documents\c++\projets en cours\project_vm\src\event\event.h
+	<SDL.h>
+	"Engine.h"
+
+1690119056 c:\users\chera\documents\c++\projets en cours\project_vm\src\entity\player.h
+	"Entity.h"
+
+1690118986 c:\users\chera\documents\c++\projets en cours\project_vm\src\entity\entity.h
+	"GameObject.h"
+
+1691682850 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\entity\vegito.cpp
+	"Vegito.h"
+	"Camera.h"
+	"Collider.h"
+	"CollisionHandler.h"
+	"SoundsManager.h"
+	<iostream>
+	"ObjectFactory.h"
+	"tinyxml.h"
+
+1693916325 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\event\event.cpp
+	"Event.h"
+
+1687352977 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\factory\objectfactory.cpp
+	"ObjectFactory.h"
+
+1690131696 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\graphics\texturemanager.cpp
+	"TextureManager.h"
+	"Camera.h"
+
+1692694775 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\map\maphandler.cpp
+	"MapHandler.h"
+	<iostream>
+
+1693918316 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\sounds\soundsmanager.cpp
+	"SoundsManager.h"
+
+1687352977 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\vender\tinyxlm\tinystr.cpp
+	"tinystr.h"
+
+1687352977 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\vender\tinyxlm\tinyxml.cpp
+	<ctype.h>
+	<sstream>
+	<iostream>
+	"tinyxml.h"
+
+1687352977 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\vender\tinyxlm\tinyxmlerror.cpp
+	"tinyxml.h"
+
+1687352977 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\vender\tinyxlm\tinyxmlparser.cpp
+	<ctype.h>
+	<stddef.h>
+	"tinyxml.h"
+	<windows.h>
+
+1697793492 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\timer\timer.cpp
+	"Timer.h"
+

@@ -1,15 +1,23 @@
 #include "Timer.h"
 
-// Initialization of the instance of the class Timer.
+// Initialization of the single instance of the class Timer.
 Timer* Timer::s_instance = nullptr;
 
+// Initialization of the private variables.
 Timer::Timer()
 {
-    // Initialization of the private variables.
     m_deltaTime = 0.0f;
     m_lastTime = 0.0f;
 }
 
+// Deletes the s_instance pointer.
+Timer::~Timer()
+{
+    s_instance = nullptr;
+    delete s_instance;
+}
+
+// Updates m_deltaTime.
 void Timer::Tick()
 {
     // Determines how much time has elapsed since the last frame.

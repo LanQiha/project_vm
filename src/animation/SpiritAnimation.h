@@ -2,7 +2,7 @@
 #define SPIRITANIMATION_H
 
 #include <string>
-#include <SDL2/SDL.h>
+#include <SDL.h>
 
 #include "Animation.h"
 

@@ -1,7 +1,7 @@
 #ifndef GAMEOBJECT_H
 #define GAMEOBJECT_H
 
-#include <SDL2/SDL.h>
+#include <SDL.h>
 
 #include "Object.h"
 #include "Transform.h"

@@ -1,7 +1,7 @@
 #ifndef EVENT_H
 #define EVENT_H
 
-#include <SDL2/SDL.h>
+#include <SDL.h>
 
 #include "Engine.h"
 

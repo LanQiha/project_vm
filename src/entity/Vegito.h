@@ -1,7 +1,7 @@
 #ifndef VEGITO_H
 #define VEGITO_H
 
-#include <SDL2/SDL.h>
+#include <SDL.h>
 
 
 #include "TextureManager.h"

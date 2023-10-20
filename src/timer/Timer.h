@@ -1,7 +1,7 @@
 #ifndef TIMER_H
 #define TIMER_H
 
-#include <SDL2/SDL.h>
+#include <SDL.h>
 
 const int TARGET_FPS = 60;
 const float TARGET_DELTA_TIME = 1.5f;
@@ -9,8 +9,8 @@ const float TARGET_DELTA_TIME = 1.5f;
 class Timer
 {
     public:
-        //Timer is a singleton class, the GetInstance() function returns the single instance of this class if s_instance was initialized.
-        inline static Timer* GetInstance() {
+        //Timer is a singleton class, the GetInstance() function returns the single instance of this class if s_instance is initialized.
+        inline static Timer* GetInstance(){
             return s_instance = (s_instance != nullptr)? s_instance : new Timer();
         }
 
@@ -20,7 +20,7 @@ class Timer
 
     private:
         Timer();
-        ~Timer(){delete s_instance; s_instance = nullptr;}
+        ~Timer();
         static Timer* s_instance;
 
         float m_deltaTime;
