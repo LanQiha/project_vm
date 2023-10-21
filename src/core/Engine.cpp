@@ -1,20 +1,6 @@
 #include "engine.h"
 
-#include "MapHandler.h"
-#include "Camera.h"
 
-#include "SoundsManager.h"
-#include "ObjectFactory.h"
-
-#include "GameObject.h"
-
-#include "TextureManager.h"
-#include "Vector2D.h"
-#include "Transform.h"
-
-#include "Timer.h"
-
-#include "Vegito.h"
 
 
 Engine* Engine::s_instance = nullptr;
@@ -59,7 +45,7 @@ bool Engine::Init()
         std::cout << "Map loaded." << std::endl;
     }
 
-    m_level_map = MapParser::get_instance()->get_map("level_1");
+    m_levelMap = MapParser::get_instance()->get_map("level_1");
 
     TextureManager::GetInstance()->ParseTexture("textures.tmx");
 
@@ -76,7 +62,7 @@ bool Engine::Init()
 
     Camera::GetInstance()->SetTarget(vegito->get_origin());
 
-    return m_is_running = true;
+    return m_isRunning = true;
 }
 
 void Engine::Clean()
@@ -91,13 +77,13 @@ void Engine::Clean()
 
 void Engine::Quit()
 {
-    m_is_running = false;
+    m_isRunning = false;
 }
 
 void Engine::Update()
 {
     float dt = Timer::GetInstance()->GetDeltaTime();
-    m_level_map->update();
+    m_levelMap->update();
     vegito->update(dt);
     Camera::GetInstance()->Update(dt);
 }
@@ -108,7 +94,7 @@ void Engine::Render()
 
     TextureManager::GetInstance()->Draw("plains_day", 0, 0, SCREEN_WIDTH * 1.5, SCREEN_HEIGHT, 1.0f, 1.0f, 0.1f, SDL_FLIP_NONE);
 
-    m_level_map->render();
+    m_levelMap->render();
 
     vegito->draw();
 
