@@ -64,26 +64,15 @@ bool Engine::Init()
     SoundsManager::GetInstance()->PlayMusic("blazing_blue_fusion");
 
     // Set the camera's target to Vegito's origin for tracking.
-    Camera::GetInstance()->SetTarget(vegito->get_origin());
+    Camera::GetInstance()->SetTarget(vegito->GetOrigin());
 
     // Set the engine's running flag to true, indicating that the engine is running.
     return m_isRunning = true;
 }
 
-void Engine::Clean()
-{
-    TextureManager::GetInstance()->Clean();
-    SoundsManager::GetInstance()->Clean();
-    SDL_DestroyRenderer(m_renderer);
-    SDL_DestroyWindow(m_window);
-    IMG_Quit();
-    SDL_Quit();
-}
 
-void Engine::Quit()
-{
-    m_isRunning = false;
-}
+
+
 
 void Engine::Update()
 {
@@ -109,4 +98,26 @@ void Engine::Render()
 void Engine::Event()
 {
     Event::GetInstance()->Listen();
+}
+
+void Engine::Clean()
+{
+    TextureManager::GetInstance()->Clean();
+    SoundsManager::GetInstance()->Clean();
+    SDL_DestroyRenderer(m_renderer);
+    SDL_DestroyWindow(m_window);
+    IMG_Quit();
+    SDL_Quit();
+}
+
+Engine::~Engine()
+{
+    delete m_levelMap;
+    delete s_instance;
+    Clean();
+}
+
+void Engine::Quit()
+{
+    m_isRunning = false;
 }

@@ -41,7 +41,7 @@ class GameObject : public Object
             m_origin = new Vector2D(px, py);
         }
 
-        inline Vector2D* get_origin(){return m_origin;}
+        inline Vector2D* GetOrigin(){return m_origin;}
 
         virtual void Draw(){};
         virtual void Update(float dt){};
