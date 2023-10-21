@@ -74,9 +74,9 @@ MapParser::MapParser()
     //ctor
 }
 
-bool MapParser::load()
+bool MapParser::Load()
 {
-    if(!parse("level_1", "map.tmx"))
+    if(!parse("Level_1", "map.tmx"))
     {
         return false;
     }

@@ -46,13 +46,13 @@ class TileLayer : public Layers
 class MapParser
 {
     public:
-        inline static MapParser* get_instance()
+        inline static MapParser* GetInstance()
         {return s_instance = (s_instance != nullptr)? s_instance : new MapParser();}
 
-        bool load();
+        bool Load();
         void clean();
 
-        inline GameMap* get_map(std::string id){return m_map[id];}
+        inline GameMap* GetMap(std::string id){return m_map[id];}
 
     public:
         bool parse(std::string id, std::string source);
