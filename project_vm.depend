@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1693915404 source:c:\users\chera\documents\c++\project_vm\main.cpp
+1686125572 source:c:\users\chera\documents\c++\project_vm\main.cpp
 	"engine.h"
 	"Timer.h"
 
@@ -398,23 +398,24 @@
 	"begin_code.h"
 	"close_code.h"
 
-1690138003 source:c:\users\chera\documents\c++\project_vm\src\core\engine.cpp
+1687338507 source:c:\users\chera\documents\c++\project_vm\src\core\engine.cpp
 	"engine.h"
 	"MapHandler.h"
 	"Camera.h"
 	"SoundsManager.h"
 	"ObjectFactory.h"
 	"GameObject.h"
-	"TextureManager.h"
-	"Vector2D.h"
-	"Transform.h"
-	"Timer.h"
-	"Vegito.h"
 
-1693915881 c:\users\chera\documents\c++\project_vm\src\core\engine.h
+1687089013 c:\users\chera\documents\c++\project_vm\src\core\engine.h
 	<iostream>
 	<SDL2/SDL.h>
 	<SDL2/SDL_image.h>
+	"TextureManager.h"
+	"Vector2D.h"
+	"Transform.h"
+	"Vegito.h"
+	"EventHandler.h"
+	"Timer.h"
 	"GameMap.h"
 
 1684603681 source:c:\users\chera\documents\c++\project_vm\src\graphics\texture_manager.cpp
@@ -438,7 +439,7 @@
 	<map>
 	<string>
 
-1687352977 c:\users\chera\documents\c++\project_vm\src\physics\vector2d.h
+1686125409 c:\users\chera\documents\c++\project_vm\src\physics\vector2d.h
 	<iostream>
 	<string>
 
@@ -448,7 +449,7 @@
 1685472584 source:c:\users\chera\documents\c++\project_vm\src\physics\transform.cpp
 	"Transform.h"
 
-1692466888 c:\users\chera\documents\c++\project_vm\src\physics\transform.h
+1686125653 c:\users\chera\documents\c++\project_vm\src\physics\transform.h
 	"Vector2D.h"
 
 1687338296 source:c:\users\chera\documents\c++\project_vm\src\characters\vegito.cpp
@@ -472,18 +473,17 @@
 1687351746 c:\users\chera\documents\c++\project_vm\src\characters\character.h
 	"GameObject.h"
 
-1693993814 c:\users\chera\documents\c++\project_vm\src\object\gameobject.h
+1687352110 c:\users\chera\documents\c++\project_vm\src\object\gameobject.h
 	<SDL2/SDL.h>
-	"Object.h"
 	"Transform.h"
 
-1693993298 c:\users\chera\documents\c++\project_vm\src\object\object.h
+1685465249 c:\users\chera\documents\c++\project_vm\src\object\object.h
 
-1690131696 source:c:\users\chera\documents\c++\project_vm\src\graphics\texturemanager.cpp
+1687088550 source:c:\users\chera\documents\c++\project_vm\src\graphics\texturemanager.cpp
 	"TextureManager.h"
 	"Camera.h"
 
-1690131810 c:\users\chera\documents\c++\project_vm\src\graphics\texturemanager.h
+1687088405 c:\users\chera\documents\c++\project_vm\src\graphics\texturemanager.h
 	<iostream>
 	<string>
 	<SDL2/SDL.h>
@@ -495,15 +495,18 @@
 1686746604 source:c:\users\chera\documents\c++\project_vm\src\animation\animation.cpp
 	"Animation.h"
 
-1690118693 c:\users\chera\documents\c++\project_vm\src\animation\animation.h
+1686746604 c:\users\chera\documents\c++\project_vm\src\animation\animation.h
+	<string>
+	<SDL2/SDL.h>
+	"TextureManager.h"
 
-1690201735 c:\users\chera\documents\c++\project_vm\src\physics\rigidbody.h
+1687352137 c:\users\chera\documents\c++\project_vm\src\physics\rigidbody.h
 	"Vector2D.h"
 	"Vegito.h"
 	<iostream>
 	"CollisionHandler.h"
 	"Collider.h"
-	"Event.h"
+	"EventHandler.h"
 
 1686415434 source:c:\users\chera\documents\c++\project_vm\src\event_handler\eventhandler.cpp
 	"EventHandler.h"
@@ -512,10 +515,10 @@
 	<SDL2/SDL.h>
 	"engine.h"
 
-1694002013 source:c:\users\chera\documents\c++\project_vm\src\timer\timer.cpp
+1685807869 source:c:\users\chera\documents\c++\project_vm\src\timer\timer.cpp
 	"Timer.h"
 
-1694002188 c:\users\chera\documents\c++\project_vm\src\timer\timer.h
+1686125561 c:\users\chera\documents\c++\project_vm\src\timer\timer.h
 	<SDL2/SDL.h>
 
 1685182096 source:c:\users\chera\documents\c++\project_vm\src\map\tilelayer.cpp
@@ -526,7 +529,7 @@
 	"Layers.h"
 	"TextureManager.h"
 
-1687352977 c:\users\chera\documents\c++\project_vm\src\map\layers.h
+1684916578 c:\users\chera\documents\c++\project_vm\src\map\layers.h
 
 1685182245 source:c:\users\chera\documents\c++\project_vm\src\map\mapparser.cpp
 
@@ -538,20 +541,20 @@
 	"TileLayer.h"
 	<tinyxml.h>
 
-1687352977 source:c:\users\chera\documents\c++\project_vm\src\vender\tinyxlm\tinystr.cpp
+1685555155 source:c:\users\chera\documents\c++\project_vm\src\vender\tinyxlm\tinystr.cpp
 	"tinystr.h"
 
-1687352977 c:\users\chera\documents\c++\project_vm\src\vender\tinyxlm\tinystr.h
+1684951407 c:\users\chera\documents\c++\project_vm\src\vender\tinyxlm\tinystr.h
 	<assert.h>
 	<string.h>
 
-1687352977 source:c:\users\chera\documents\c++\project_vm\src\vender\tinyxlm\tinyxml.cpp
+1684951397 source:c:\users\chera\documents\c++\project_vm\src\vender\tinyxlm\tinyxml.cpp
 	<ctype.h>
 	<sstream>
 	<iostream>
 	"tinyxml.h"
 
-1687352977 c:\users\chera\documents\c++\project_vm\src\vender\tinyxlm\tinyxml.h
+1684951385 c:\users\chera\documents\c++\project_vm\src\vender\tinyxlm\tinyxml.h
 	<ctype.h>
 	<stdio.h>
 	<stdlib.h>
@@ -562,24 +565,24 @@
 	<sstream>
 	"tinystr.h"
 
-1687352977 source:c:\users\chera\documents\c++\project_vm\src\vender\tinyxlm\tinyxmlerror.cpp
+1684951369 source:c:\users\chera\documents\c++\project_vm\src\vender\tinyxlm\tinyxmlerror.cpp
 	"tinyxml.h"
 
-1687352977 source:c:\users\chera\documents\c++\project_vm\src\vender\tinyxlm\tinyxmlparser.cpp
+1684951355 source:c:\users\chera\documents\c++\project_vm\src\vender\tinyxlm\tinyxmlparser.cpp
 	<ctype.h>
 	<stddef.h>
 	"tinyxml.h"
 	<windows.h>
 
-1687352977 c:\users\chera\documents\c++\project_vm\src\map\gamemap.h
+1685173315 c:\users\chera\documents\c++\project_vm\src\map\gamemap.h
 	"Layers.h"
 	<vector>
 
-1692694775 source:c:\users\chera\documents\c++\project_vm\src\map\maphandler.cpp
+1687338724 source:c:\users\chera\documents\c++\project_vm\src\map\maphandler.cpp
 	"MapHandler.h"
 	<iostream>
 
-1687352977 c:\users\chera\documents\c++\project_vm\src\map\maphandler.h
+1685555351 c:\users\chera\documents\c++\project_vm\src\map\maphandler.h
 	<string>
 	<vector>
 	<map>
@@ -612,10 +615,10 @@
 	<cstddef>
 	<cstdarg>
 
-1693915494 source:c:\users\chera\documents\c++\project_vm\src\collision\collisionhandler.cpp
+1687270127 source:c:\users\chera\documents\c++\project_vm\src\collision\collisionhandler.cpp
 	"CollisionHandler.h"
 
-1690120929 c:\users\chera\documents\c++\project_vm\src\collision\collisionhandler.h
+1687338746 c:\users\chera\documents\c++\project_vm\src\collision\collisionhandler.h
 	<SDL2/SDL.h>
 	"GameMap.h"
 	"Layers.h"
@@ -623,12 +626,12 @@
 	"engine.h"
 	"TextureManager.h"
 
-1687352977 c:\users\chera\documents\c++\project_vm\src\physics\collider.h
+1686604658 c:\users\chera\documents\c++\project_vm\src\physics\collider.h
 
-1687521815 source:c:\users\chera\documents\c++\project_vm\src\camera\camera.cpp
+1686234704 source:c:\users\chera\documents\c++\project_vm\src\camera\camera.cpp
 	"Camera.h"
 
-1687521608 c:\users\chera\documents\c++\project_vm\src\camera\camera.h
+1686234355 c:\users\chera\documents\c++\project_vm\src\camera\camera.h
 	<SDL2/SDL.h>
 	"Vector2D.h"
 	"engine.h"
@@ -682,10 +685,10 @@
 
 1686403740 c:\users\chera\documents\c++\project_vm\src\sounds\soundmanager.h
 
-1693918316 source:c:\users\chera\documents\c++\project_vm\src\sounds\soundsmanager.cpp
+1686602095 source:c:\users\chera\documents\c++\project_vm\src\sounds\soundsmanager.cpp
 	"SoundsManager.h"
 
-1693917731 c:\users\chera\documents\c++\project_vm\src\sounds\soundsmanager.h
+1686602099 c:\users\chera\documents\c++\project_vm\src\sounds\soundsmanager.h
 	<iostream>
 	<string>
 	<map>
@@ -700,32 +703,28 @@
 	"begin_code.h"
 	"close_code.h"
 
-1690136382 source:c:\users\chera\documents\c++\project_vm\src\animation\sequenceanimation.cpp
+1686746663 source:c:\users\chera\documents\c++\project_vm\src\animation\sequenceanimation.cpp
 	"SequenceAnimation.h"
-	"TextureManager.h"
-	"tinyxml.h"
 
-1690116317 c:\users\chera\documents\c++\project_vm\src\animation\sequenceanimation.h
+1686746647 c:\users\chera\documents\c++\project_vm\src\animation\sequenceanimation.h
 	<string>
 	<vector>
 	<map>
 	<SDL2/SDL.h>
 	"Animation.h"
 
-1690131823 source:c:\users\chera\documents\c++\project_vm\src\animation\spiritanimation.cpp
+1686746704 source:c:\users\chera\documents\c++\project_vm\src\animation\spiritanimation.cpp
 	"SpiritAnimation.h"
-	<SDL2/SDL.h>
-	"TextureManager.h"
 
-1690118757 c:\users\chera\documents\c++\project_vm\src\animation\spiritanimation.h
+1686746674 c:\users\chera\documents\c++\project_vm\src\animation\spiritanimation.h
 	<string>
 	<SDL2/SDL.h>
 	"Animation.h"
 
-1687352977 source:c:\users\chera\documents\c++\project_vm\src\factory\objectfactory.cpp
+1687337278 source:c:\users\chera\documents\c++\project_vm\src\factory\objectfactory.cpp
 	"ObjectFactory.h"
 
-1687352977 c:\users\chera\documents\c++\project_vm\src\factory\objectfactory.h
+1687337794 c:\users\chera\documents\c++\project_vm\src\factory\objectfactory.h
 	<string>
 	<map>
 	<functional>
@@ -737,13 +736,15 @@
 
 1687094298 c:\users\chera\documents\c++\project_vm\src\states\statemanager.h
 
-1690200834 source:c:\users\chera\documents\c++\project_vm\src\widgets\button.cpp
+1687269118 source:c:\users\chera\documents\c++\project_vm\src\widgets\button.cpp
 	"Button.h"
 
-1690200844 c:\users\chera\documents\c++\project_vm\src\widgets\button.h
+1687269072 c:\users\chera\documents\c++\project_vm\src\widgets\button.h
 	<string>
 	<vector>
 	<SDL2/SDL.h>
+	"EventHandler.h"
+	"TextureManager.h"
 	"GameObject.h"
 
 1687351382 source:c:\users\chera\documents\c++\project_vm\src\characters\ennemy.cpp
@@ -1219,7 +1220,7 @@
 	"EventHandler.h"
 	"TextureManager.h"
 
-1692440226 c:\lib\box2d-2.4.1\include\box2d\box2d.h
+1690099984 c:\lib\box2d-2.4.1\include\box2d\box2d.h
 	"b2_settings.h"
 	"b2_draw.h"
 	"b2_timer.h"
@@ -1246,7 +1247,7 @@
 	"b2_weld_joint.h"
 	"b2_wheel_joint.h"
 
-1692440225 c:\lib\box2d-2.4.1\include\box2d\b2_settings.h
+1690099983 c:\lib\box2d-2.4.1\include\box2d\b2_settings.h
 	"b2_types.h"
 	"b2_api.h"
 	"b2_user_settings.h"
@@ -1254,93 +1255,93 @@
 	<stdint.h>
 	"b2_common.h"
 
-1692440226 c:\lib\box2d-2.4.1\include\box2d\b2_types.h
+1690099983 c:\lib\box2d-2.4.1\include\box2d\b2_types.h
 
-1692440225 c:\lib\box2d-2.4.1\include\box2d\b2_api.h
+1690099981 c:\lib\box2d-2.4.1\include\box2d\b2_api.h
 
-1692440225 c:\lib\box2d-2.4.1\include\box2d\b2_common.h
+1690099982 c:\lib\box2d-2.4.1\include\box2d\b2_common.h
 	"b2_settings.h"
 	<stddef.h>
 	<assert.h>
 	<float.h>
 
-1692440225 c:\lib\box2d-2.4.1\include\box2d\b2_draw.h
+1690099982 c:\lib\box2d-2.4.1\include\box2d\b2_draw.h
 	"b2_api.h"
 	"b2_math.h"
 
-1692440225 c:\lib\box2d-2.4.1\include\box2d\b2_math.h
+1690099982 c:\lib\box2d-2.4.1\include\box2d\b2_math.h
 	<math.h>
 	"b2_api.h"
 	"b2_settings.h"
 
-1692440226 c:\lib\box2d-2.4.1\include\box2d\b2_timer.h
+1690099983 c:\lib\box2d-2.4.1\include\box2d\b2_timer.h
 	"b2_api.h"
 	"b2_settings.h"
 
-1692440225 c:\lib\box2d-2.4.1\include\box2d\b2_chain_shape.h
+1690099981 c:\lib\box2d-2.4.1\include\box2d\b2_chain_shape.h
 	"b2_api.h"
 	"b2_shape.h"
 
-1692440226 c:\lib\box2d-2.4.1\include\box2d\b2_shape.h
+1690099983 c:\lib\box2d-2.4.1\include\box2d\b2_shape.h
 	"b2_api.h"
 	"b2_math.h"
 	"b2_collision.h"
 
-1692440225 c:\lib\box2d-2.4.1\include\box2d\b2_collision.h
+1690099981 c:\lib\box2d-2.4.1\include\box2d\b2_collision.h
 	<limits.h>
 	"b2_api.h"
 	"b2_math.h"
 
-1692440225 c:\lib\box2d-2.4.1\include\box2d\b2_circle_shape.h
+1690099981 c:\lib\box2d-2.4.1\include\box2d\b2_circle_shape.h
 	"b2_api.h"
 	"b2_shape.h"
 
-1692440225 c:\lib\box2d-2.4.1\include\box2d\b2_edge_shape.h
+1690099982 c:\lib\box2d-2.4.1\include\box2d\b2_edge_shape.h
 	"b2_api.h"
 	"b2_shape.h"
 
-1692440225 c:\lib\box2d-2.4.1\include\box2d\b2_polygon_shape.h
+1690099983 c:\lib\box2d-2.4.1\include\box2d\b2_polygon_shape.h
 	"b2_api.h"
 	"b2_shape.h"
 
-1692440225 c:\lib\box2d-2.4.1\include\box2d\b2_broad_phase.h
+1690099981 c:\lib\box2d-2.4.1\include\box2d\b2_broad_phase.h
 	"b2_api.h"
 	"b2_settings.h"
 	"b2_collision.h"
 	"b2_dynamic_tree.h"
 
-1692440225 c:\lib\box2d-2.4.1\include\box2d\b2_dynamic_tree.h
+1690099982 c:\lib\box2d-2.4.1\include\box2d\b2_dynamic_tree.h
 	"b2_api.h"
 	"b2_collision.h"
 	"b2_growable_stack.h"
 
-1692440225 c:\lib\box2d-2.4.1\include\box2d\b2_growable_stack.h
+1690099982 c:\lib\box2d-2.4.1\include\box2d\b2_growable_stack.h
 	<string.h>
 	"b2_settings.h"
 
-1692440225 c:\lib\box2d-2.4.1\include\box2d\b2_body.h
+1690099981 c:\lib\box2d-2.4.1\include\box2d\b2_body.h
 	"b2_api.h"
 	"b2_math.h"
 	"b2_shape.h"
 
-1692440225 c:\lib\box2d-2.4.1\include\box2d\b2_contact.h
+1690099982 c:\lib\box2d-2.4.1\include\box2d\b2_contact.h
 	"b2_api.h"
 	"b2_collision.h"
 	"b2_fixture.h"
 	"b2_math.h"
 	"b2_shape.h"
 
-1692440225 c:\lib\box2d-2.4.1\include\box2d\b2_fixture.h
+1690099982 c:\lib\box2d-2.4.1\include\box2d\b2_fixture.h
 	"b2_api.h"
 	"b2_body.h"
 	"b2_collision.h"
 	"b2_shape.h"
 
-1692440226 c:\lib\box2d-2.4.1\include\box2d\b2_time_step.h
+1690099983 c:\lib\box2d-2.4.1\include\box2d\b2_time_step.h
 	"b2_api.h"
 	"b2_math.h"
 
-1692440226 c:\lib\box2d-2.4.1\include\box2d\b2_world.h
+1690099984 c:\lib\box2d-2.4.1\include\box2d\b2_world.h
 	"b2_api.h"
 	"b2_block_allocator.h"
 	"b2_contact_manager.h"
@@ -1349,62 +1350,62 @@
 	"b2_time_step.h"
 	"b2_world_callbacks.h"
 
-1692440225 c:\lib\box2d-2.4.1\include\box2d\b2_block_allocator.h
+1690099981 c:\lib\box2d-2.4.1\include\box2d\b2_block_allocator.h
 	"b2_api.h"
 	"b2_settings.h"
 
-1692440225 c:\lib\box2d-2.4.1\include\box2d\b2_contact_manager.h
+1690099982 c:\lib\box2d-2.4.1\include\box2d\b2_contact_manager.h
 	"b2_api.h"
 	"b2_broad_phase.h"
 
-1692440226 c:\lib\box2d-2.4.1\include\box2d\b2_stack_allocator.h
+1690099983 c:\lib\box2d-2.4.1\include\box2d\b2_stack_allocator.h
 	"b2_api.h"
 	"b2_settings.h"
 
-1692440226 c:\lib\box2d-2.4.1\include\box2d\b2_world_callbacks.h
+1690099984 c:\lib\box2d-2.4.1\include\box2d\b2_world_callbacks.h
 	"b2_api.h"
 	"b2_settings.h"
 
-1692440225 c:\lib\box2d-2.4.1\include\box2d\b2_distance_joint.h
+1690099982 c:\lib\box2d-2.4.1\include\box2d\b2_distance_joint.h
 	"b2_api.h"
 	"b2_joint.h"
 
-1692440225 c:\lib\box2d-2.4.1\include\box2d\b2_joint.h
+1690099982 c:\lib\box2d-2.4.1\include\box2d\b2_joint.h
 	"b2_api.h"
 	"b2_math.h"
 
-1692440225 c:\lib\box2d-2.4.1\include\box2d\b2_friction_joint.h
+1690099982 c:\lib\box2d-2.4.1\include\box2d\b2_friction_joint.h
 	"b2_api.h"
 	"b2_joint.h"
 
-1692440225 c:\lib\box2d-2.4.1\include\box2d\b2_gear_joint.h
+1690099982 c:\lib\box2d-2.4.1\include\box2d\b2_gear_joint.h
 	"b2_joint.h"
 
-1692440225 c:\lib\box2d-2.4.1\include\box2d\b2_motor_joint.h
+1690099983 c:\lib\box2d-2.4.1\include\box2d\b2_motor_joint.h
 	"b2_api.h"
 	"b2_joint.h"
 
-1692440225 c:\lib\box2d-2.4.1\include\box2d\b2_mouse_joint.h
+1690099983 c:\lib\box2d-2.4.1\include\box2d\b2_mouse_joint.h
 	"b2_api.h"
 	"b2_joint.h"
 
-1692440225 c:\lib\box2d-2.4.1\include\box2d\b2_prismatic_joint.h
+1690099983 c:\lib\box2d-2.4.1\include\box2d\b2_prismatic_joint.h
 	"b2_api.h"
 	"b2_joint.h"
 
-1692440225 c:\lib\box2d-2.4.1\include\box2d\b2_pulley_joint.h
+1690099983 c:\lib\box2d-2.4.1\include\box2d\b2_pulley_joint.h
 	"b2_api.h"
 	"b2_joint.h"
 
-1692440225 c:\lib\box2d-2.4.1\include\box2d\b2_revolute_joint.h
+1690099983 c:\lib\box2d-2.4.1\include\box2d\b2_revolute_joint.h
 	"b2_api.h"
 	"b2_joint.h"
 
-1692440226 c:\lib\box2d-2.4.1\include\box2d\b2_weld_joint.h
+1690099984 c:\lib\box2d-2.4.1\include\box2d\b2_weld_joint.h
 	"b2_api.h"
 	"b2_joint.h"
 
-1692440226 c:\lib\box2d-2.4.1\include\box2d\b2_wheel_joint.h
+1690099984 c:\lib\box2d-2.4.1\include\box2d\b2_wheel_joint.h
 	"b2_api.h"
 	"b2_joint.h"
 
@@ -1674,40 +1675,40 @@
 1687352977 source:c:\users\chera\bureau\project_vm-1.0.0\src\physics\rigidbody.cpp
 	"RigidBody.h"
 
-1690121614 source:c:\users\chera\documents\projects\project_vm-1.0.0\main.cpp
+1698502041 source:c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\main.cpp
 	"engine.h"
 	"Timer.h"
 
-1690121411 c:\users\chera\documents\projects\project_vm-1.0.0\src\core\engine.h
+1698502045 c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\core\engine.h
 	<iostream>
 	<SDL2/SDL.h>
 	<SDL2/SDL_image.h>
 	"GameMap.h"
 
-1687352977 c:\users\chera\documents\projects\project_vm-1.0.0\src\map\gamemap.h
+1698502046 c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\map\gamemap.h
 	"Layers.h"
 	<vector>
 
-1687352977 c:\users\chera\documents\projects\project_vm-1.0.0\src\map\layers.h
+1698502046 c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\map\layers.h
 
-1687352977 c:\users\chera\documents\projects\project_vm-1.0.0\src\timer\timer.h
+1698502046 c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\timer\timer.h
 	<SDL2/SDL.h>
 
-1690136382 source:c:\users\chera\documents\projects\project_vm-1.0.0\src\animation\sequenceanimation.cpp
+1698502045 source:c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\animation\sequenceanimation.cpp
 	"SequenceAnimation.h"
 	"TextureManager.h"
 	"tinyxml.h"
 
-1690116317 c:\users\chera\documents\projects\project_vm-1.0.0\src\animation\sequenceanimation.h
+1698502045 c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\animation\sequenceanimation.h
 	<string>
 	<vector>
 	<map>
 	<SDL2/SDL.h>
 	"Animation.h"
 
-1690118693 c:\users\chera\documents\projects\project_vm-1.0.0\src\animation\animation.h
+1698502045 c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\animation\animation.h
 
-1690131810 c:\users\chera\documents\projects\project_vm-1.0.0\src\graphics\texturemanager.h
+1698502046 c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\graphics\texturemanager.h
 	<iostream>
 	<string>
 	<SDL2/SDL.h>
@@ -1716,7 +1717,7 @@
 	<map>
 	"engine.h"
 
-1687352977 c:\users\chera\documents\projects\project_vm-1.0.0\src\vender\tinyxlm\tinyxml.h
+1698502046 c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\vender\tinyxlm\tinyxml.h
 	<ctype.h>
 	<stdio.h>
 	<stdlib.h>
@@ -1727,36 +1728,36 @@
 	<sstream>
 	"tinystr.h"
 
-1687352977 c:\users\chera\documents\projects\project_vm-1.0.0\src\vender\tinyxlm\tinystr.h
+1698502046 c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\vender\tinyxlm\tinystr.h
 	<assert.h>
 	<string.h>
 
-1690131823 source:c:\users\chera\documents\projects\project_vm-1.0.0\src\animation\spiritanimation.cpp
+1698502045 source:c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\animation\spiritanimation.cpp
 	"SpiritAnimation.h"
 	<SDL2/SDL.h>
 	"TextureManager.h"
 
-1690118757 c:\users\chera\documents\projects\project_vm-1.0.0\src\animation\spiritanimation.h
+1698502045 c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\animation\spiritanimation.h
 	<string>
 	<SDL2/SDL.h>
 	"Animation.h"
 
-1687521815 source:c:\users\chera\documents\projects\project_vm-1.0.0\src\camera\camera.cpp
+1698502045 source:c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\camera\camera.cpp
 	"Camera.h"
 
-1687521608 c:\users\chera\documents\projects\project_vm-1.0.0\src\camera\camera.h
+1698502045 c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\camera\camera.h
 	<SDL2/SDL.h>
 	"Vector2D.h"
 	"engine.h"
 
-1687352977 c:\users\chera\documents\projects\project_vm-1.0.0\src\physics\vector2d.h
+1698502046 c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\physics\vector2d.h
 	<iostream>
 	<string>
 
-1692431333 source:c:\users\chera\documents\projects\project_vm-1.0.0\src\collision\collisionhandler.cpp
+1698502045 source:c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\collision\collisionhandler.cpp
 	"CollisionHandler.h"
 
-1690120929 c:\users\chera\documents\projects\project_vm-1.0.0\src\collision\collisionhandler.h
+1698502045 c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\collision\collisionhandler.h
 	<SDL2/SDL.h>
 	"GameMap.h"
 	"Layers.h"
@@ -1764,7 +1765,7 @@
 	"engine.h"
 	"TextureManager.h"
 
-1687352977 c:\users\chera\documents\projects\project_vm-1.0.0\src\map\maphandler.h
+1698502046 c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\map\maphandler.h
 	<string>
 	<vector>
 	<map>
@@ -1773,7 +1774,7 @@
 	"tinyxml.h"
 	"TextureManager.h"
 
-1690138003 source:c:\users\chera\documents\projects\project_vm-1.0.0\src\core\engine.cpp
+1698502045 source:c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\core\engine.cpp
 	"engine.h"
 	"MapHandler.h"
 	"Camera.h"
@@ -1786,30 +1787,30 @@
 	"Timer.h"
 	"Vegito.h"
 
-1687352977 c:\users\chera\documents\projects\project_vm-1.0.0\src\sounds\soundsmanager.h
+1698502046 c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\sounds\soundsmanager.h
 	<iostream>
 	<string>
 	<map>
 	<SDL2/SDL_mixer.h>
 
-1687352977 c:\users\chera\documents\projects\project_vm-1.0.0\src\factory\objectfactory.h
+1698502045 c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\factory\objectfactory.h
 	<string>
 	<map>
 	<functional>
 	<memory>
 	"GameObject.h"
 
-1687438868 c:\users\chera\documents\projects\project_vm-1.0.0\src\object\gameobject.h
+1698502046 c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\object\gameobject.h
 	<SDL2/SDL.h>
 	"Object.h"
 	"Transform.h"
 
-1690120971 c:\users\chera\documents\projects\project_vm-1.0.0\src\object\object.h
+1698502046 c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\object\object.h
 
-1692466888 c:\users\chera\documents\projects\project_vm-1.0.0\src\physics\transform.h
+1698502046 c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\physics\transform.h
 	"Vector2D.h"
 
-1690446269 c:\users\chera\documents\projects\project_vm-1.0.0\src\entity\vegito.h
+1698502045 c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\entity\vegito.h
 	<SDL2/SDL.h>
 	"TextureManager.h"
 	"RigidBody.h"
@@ -1820,7 +1821,7 @@
 	"Player.h"
 	"RigidBody.h"
 
-1690201735 c:\users\chera\documents\projects\project_vm-1.0.0\src\physics\rigidbody.h
+1698502046 c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\physics\rigidbody.h
 	"Vector2D.h"
 	"Vegito.h"
 	<iostream>
@@ -1828,19 +1829,19 @@
 	"Collider.h"
 	"Event.h"
 
-1687352977 c:\users\chera\documents\projects\project_vm-1.0.0\src\physics\collider.h
+1698502046 c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\physics\collider.h
 
-1690132880 c:\users\chera\documents\projects\project_vm-1.0.0\src\event\event.h
+1698502045 c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\event\event.h
 	<SDL2/SDL.h>
 	"Engine.h"
 
-1690119056 c:\users\chera\documents\projects\project_vm-1.0.0\src\entity\player.h
+1698502045 c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\entity\player.h
 	"Entity.h"
 
-1690118986 c:\users\chera\documents\projects\project_vm-1.0.0\src\entity\entity.h
+1698502045 c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\entity\entity.h
 	"GameObject.h"
 
-1691682850 source:c:\users\chera\documents\projects\project_vm-1.0.0\src\entity\vegito.cpp
+1698502045 source:c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\entity\vegito.cpp
 	"Vegito.h"
 	"Camera.h"
 	"Collider.h"
@@ -1850,521 +1851,50 @@
 	"ObjectFactory.h"
 	"tinyxml.h"
 
-1690132995 source:c:\users\chera\documents\projects\project_vm-1.0.0\src\event\event.cpp
+1698502045 source:c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\event\event.cpp
 	"Event.h"
 
-1687352977 source:c:\users\chera\documents\projects\project_vm-1.0.0\src\factory\objectfactory.cpp
+1698502045 source:c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\factory\objectfactory.cpp
 	"ObjectFactory.h"
 
-1690131696 source:c:\users\chera\documents\projects\project_vm-1.0.0\src\graphics\texturemanager.cpp
+1698502046 source:c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\graphics\texturemanager.cpp
 	"TextureManager.h"
 	"Camera.h"
 
-1692694775 source:c:\users\chera\documents\projects\project_vm-1.0.0\src\map\maphandler.cpp
+1698502046 source:c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\map\maphandler.cpp
 	"MapHandler.h"
 	<iostream>
 
-1690137034 source:c:\users\chera\documents\projects\project_vm-1.0.0\src\sounds\soundsmanager.cpp
+1698502046 source:c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\sounds\soundsmanager.cpp
 	"SoundsManager.h"
 
-1687352977 source:c:\users\chera\documents\projects\project_vm-1.0.0\src\timer\timer.cpp
+1698502046 source:c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\timer\timer.cpp
 	"Timer.h"
 
-1687352977 source:c:\users\chera\documents\projects\project_vm-1.0.0\src\vender\tinyxlm\tinystr.cpp
+1698502046 source:c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\vender\tinyxlm\tinystr.cpp
 	"tinystr.h"
 
-1687352977 source:c:\users\chera\documents\projects\project_vm-1.0.0\src\vender\tinyxlm\tinyxml.cpp
+1698502046 source:c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\vender\tinyxlm\tinyxml.cpp
 	<ctype.h>
 	<sstream>
 	<iostream>
 	"tinyxml.h"
 
-1687352977 source:c:\users\chera\documents\projects\project_vm-1.0.0\src\vender\tinyxlm\tinyxmlerror.cpp
+1698502046 source:c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\vender\tinyxlm\tinyxmlerror.cpp
 	"tinyxml.h"
 
-1687352977 source:c:\users\chera\documents\projects\project_vm-1.0.0\src\vender\tinyxlm\tinyxmlparser.cpp
+1698502046 source:c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\vender\tinyxlm\tinyxmlparser.cpp
 	<ctype.h>
 	<stddef.h>
 	"tinyxml.h"
 	<windows.h>
 
-1690200834 source:c:\users\chera\documents\projects\project_vm-1.0.0\src\widgets\button.cpp
+1698502046 source:c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\widgets\button.cpp
 	"Button.h"
 
-1690200844 c:\users\chera\documents\projects\project_vm-1.0.0\src\widgets\button.h
+1698502046 c:\users\chera\bureau\project_vm-1.0.0\project_vm-1.0.0\src\widgets\button.h
 	<string>
 	<vector>
 	<SDL2/SDL.h>
 	"GameObject.h"
-
-1690121614 source:c:\users\chera\documents\c++\project_vm-1.0.0\main.cpp
-	"engine.h"
-	"Timer.h"
-
-1690121411 c:\users\chera\documents\c++\project_vm-1.0.0\src\core\engine.h
-	<iostream>
-	<SDL2/SDL.h>
-	<SDL2/SDL_image.h>
-	"GameMap.h"
-
-1687352977 c:\users\chera\documents\c++\project_vm-1.0.0\src\map\gamemap.h
-	"Layers.h"
-	<vector>
-
-1687352977 c:\users\chera\documents\c++\project_vm-1.0.0\src\map\layers.h
-
-1687352977 c:\users\chera\documents\c++\project_vm-1.0.0\src\timer\timer.h
-	<SDL2/SDL.h>
-
-1690136382 source:c:\users\chera\documents\c++\project_vm-1.0.0\src\animation\sequenceanimation.cpp
-	"SequenceAnimation.h"
-	"TextureManager.h"
-	"tinyxml.h"
-
-1690116317 c:\users\chera\documents\c++\project_vm-1.0.0\src\animation\sequenceanimation.h
-	<string>
-	<vector>
-	<map>
-	<SDL2/SDL.h>
-	"Animation.h"
-
-1690118693 c:\users\chera\documents\c++\project_vm-1.0.0\src\animation\animation.h
-
-1690131810 c:\users\chera\documents\c++\project_vm-1.0.0\src\graphics\texturemanager.h
-	<iostream>
-	<string>
-	<SDL2/SDL.h>
-	<SDL2/SDL_image.h>
-	"tinyxml.h"
-	<map>
-	"engine.h"
-
-1687352977 c:\users\chera\documents\c++\project_vm-1.0.0\src\vender\tinyxlm\tinyxml.h
-	<ctype.h>
-	<stdio.h>
-	<stdlib.h>
-	<string.h>
-	<assert.h>
-	<string>
-	<iostream>
-	<sstream>
-	"tinystr.h"
-
-1687352977 c:\users\chera\documents\c++\project_vm-1.0.0\src\vender\tinyxlm\tinystr.h
-	<assert.h>
-	<string.h>
-
-1690131823 source:c:\users\chera\documents\c++\project_vm-1.0.0\src\animation\spiritanimation.cpp
-	"SpiritAnimation.h"
-	<SDL2/SDL.h>
-	"TextureManager.h"
-
-1690118757 c:\users\chera\documents\c++\project_vm-1.0.0\src\animation\spiritanimation.h
-	<string>
-	<SDL2/SDL.h>
-	"Animation.h"
-
-1687521815 source:c:\users\chera\documents\c++\project_vm-1.0.0\src\camera\camera.cpp
-	"Camera.h"
-
-1687521608 c:\users\chera\documents\c++\project_vm-1.0.0\src\camera\camera.h
-	<SDL2/SDL.h>
-	"Vector2D.h"
-	"engine.h"
-
-1687352977 c:\users\chera\documents\c++\project_vm-1.0.0\src\physics\vector2d.h
-	<iostream>
-	<string>
-
-1692431333 source:c:\users\chera\documents\c++\project_vm-1.0.0\src\collision\collisionhandler.cpp
-	"CollisionHandler.h"
-
-1690120929 c:\users\chera\documents\c++\project_vm-1.0.0\src\collision\collisionhandler.h
-	<SDL2/SDL.h>
-	"GameMap.h"
-	"Layers.h"
-	"MapHandler.h"
-	"engine.h"
-	"TextureManager.h"
-
-1687352977 c:\users\chera\documents\c++\project_vm-1.0.0\src\map\maphandler.h
-	<string>
-	<vector>
-	<map>
-	"Layers.h"
-	"GameMap.h"
-	"tinyxml.h"
-	"TextureManager.h"
-
-1690138003 source:c:\users\chera\documents\c++\project_vm-1.0.0\src\core\engine.cpp
-	"engine.h"
-	"MapHandler.h"
-	"Camera.h"
-	"SoundsManager.h"
-	"ObjectFactory.h"
-	"GameObject.h"
-	"TextureManager.h"
-	"Vector2D.h"
-	"Transform.h"
-	"Timer.h"
-	"Vegito.h"
-
-1687352977 c:\users\chera\documents\c++\project_vm-1.0.0\src\sounds\soundsmanager.h
-	<iostream>
-	<string>
-	<map>
-	<SDL2/SDL_mixer.h>
-
-1687352977 c:\users\chera\documents\c++\project_vm-1.0.0\src\factory\objectfactory.h
-	<string>
-	<map>
-	<functional>
-	<memory>
-	"GameObject.h"
-
-1687438868 c:\users\chera\documents\c++\project_vm-1.0.0\src\object\gameobject.h
-	<SDL2/SDL.h>
-	"Object.h"
-	"Transform.h"
-
-1690120971 c:\users\chera\documents\c++\project_vm-1.0.0\src\object\object.h
-
-1692466888 c:\users\chera\documents\c++\project_vm-1.0.0\src\physics\transform.h
-	"Vector2D.h"
-
-1690446269 c:\users\chera\documents\c++\project_vm-1.0.0\src\entity\vegito.h
-	<SDL2/SDL.h>
-	"TextureManager.h"
-	"RigidBody.h"
-	"Animation.h"
-	"Collider.h"
-	"SpiritAnimation.h"
-	"SequenceAnimation.h"
-	"Player.h"
-	"RigidBody.h"
-
-1690201735 c:\users\chera\documents\c++\project_vm-1.0.0\src\physics\rigidbody.h
-	"Vector2D.h"
-	"Vegito.h"
-	<iostream>
-	"CollisionHandler.h"
-	"Collider.h"
-	"Event.h"
-
-1687352977 c:\users\chera\documents\c++\project_vm-1.0.0\src\physics\collider.h
-
-1690132880 c:\users\chera\documents\c++\project_vm-1.0.0\src\event\event.h
-	<SDL2/SDL.h>
-	"Engine.h"
-
-1690119056 c:\users\chera\documents\c++\project_vm-1.0.0\src\entity\player.h
-	"Entity.h"
-
-1690118986 c:\users\chera\documents\c++\project_vm-1.0.0\src\entity\entity.h
-	"GameObject.h"
-
-1691682850 source:c:\users\chera\documents\c++\project_vm-1.0.0\src\entity\vegito.cpp
-	"Vegito.h"
-	"Camera.h"
-	"Collider.h"
-	"CollisionHandler.h"
-	"SoundsManager.h"
-	<iostream>
-	"ObjectFactory.h"
-	"tinyxml.h"
-
-1690132995 source:c:\users\chera\documents\c++\project_vm-1.0.0\src\event\event.cpp
-	"Event.h"
-
-1687352977 source:c:\users\chera\documents\c++\project_vm-1.0.0\src\factory\objectfactory.cpp
-	"ObjectFactory.h"
-
-1690131696 source:c:\users\chera\documents\c++\project_vm-1.0.0\src\graphics\texturemanager.cpp
-	"TextureManager.h"
-	"Camera.h"
-
-1692694775 source:c:\users\chera\documents\c++\project_vm-1.0.0\src\map\maphandler.cpp
-	"MapHandler.h"
-	<iostream>
-
-1690137034 source:c:\users\chera\documents\c++\project_vm-1.0.0\src\sounds\soundsmanager.cpp
-	"SoundsManager.h"
-
-1687352977 source:c:\users\chera\documents\c++\project_vm-1.0.0\src\timer\timer.cpp
-	"Timer.h"
-
-1687352977 source:c:\users\chera\documents\c++\project_vm-1.0.0\src\vender\tinyxlm\tinystr.cpp
-	"tinystr.h"
-
-1687352977 source:c:\users\chera\documents\c++\project_vm-1.0.0\src\vender\tinyxlm\tinyxml.cpp
-	<ctype.h>
-	<sstream>
-	<iostream>
-	"tinyxml.h"
-
-1687352977 source:c:\users\chera\documents\c++\project_vm-1.0.0\src\vender\tinyxlm\tinyxmlerror.cpp
-	"tinyxml.h"
-
-1687352977 source:c:\users\chera\documents\c++\project_vm-1.0.0\src\vender\tinyxlm\tinyxmlparser.cpp
-	<ctype.h>
-	<stddef.h>
-	"tinyxml.h"
-	<windows.h>
-
-1690200834 source:c:\users\chera\documents\c++\project_vm-1.0.0\src\widgets\button.cpp
-	"Button.h"
-
-1690200844 c:\users\chera\documents\c++\project_vm-1.0.0\src\widgets\button.h
-	<string>
-	<vector>
-	<SDL2/SDL.h>
-	"GameObject.h"
-
-1690446269 c:\users\chera\documents\c++\project_vm\src\entity\vegito.h
-	<SDL2/SDL.h>
-	"TextureManager.h"
-	"RigidBody.h"
-	"Animation.h"
-	"Collider.h"
-	"SpiritAnimation.h"
-	"SequenceAnimation.h"
-	"Player.h"
-	"RigidBody.h"
-
-1693915876 c:\users\chera\documents\c++\project_vm\src\event\event.h
-	<SDL2/SDL.h>
-	"Engine.h"
-
-1690119056 c:\users\chera\documents\c++\project_vm\src\entity\player.h
-	"Entity.h"
-
-1690118986 c:\users\chera\documents\c++\project_vm\src\entity\entity.h
-	"GameObject.h"
-
-1691682850 source:c:\users\chera\documents\c++\project_vm\src\entity\vegito.cpp
-	"Vegito.h"
-	"Camera.h"
-	"Collider.h"
-	"CollisionHandler.h"
-	"SoundsManager.h"
-	<iostream>
-	"ObjectFactory.h"
-	"tinyxml.h"
-
-1693916325 source:c:\users\chera\documents\c++\project_vm\src\event\event.cpp
-	"Event.h"
-
-1693915404 source:c:\users\chera\documents\c++\projets en cours\project_vm\main.cpp
-	"engine.h"
-	"Timer.h"
-
-1697877609 c:\users\chera\documents\c++\projets en cours\project_vm\src\core\engine.h
-	<iostream>
-	<SDL.h>
-	<SDL_image.h>
-	"Camera.h"
-	"Vegito.h"
-	"ObjectFactory.h"
-	"TextureManager.h"
-	"GameMap.h"
-	"MapHandler.h"
-	"GameObject.h"
-	"Transform.h"
-	"Vector2D.h"
-	"SoundsManager.h"
-	"Timer.h"
-
-1697802541 c:\users\chera\documents\c++\projets en cours\project_vm\src\map\gamemap.h
-	"Layers.h"
-	<vector>
-
-1687352977 c:\users\chera\documents\c++\projets en cours\project_vm\src\map\layers.h
-
-1697793680 c:\users\chera\documents\c++\projets en cours\project_vm\src\timer\timer.h
-	<SDL.h>
-
-1690136382 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\animation\sequenceanimation.cpp
-	"SequenceAnimation.h"
-	"TextureManager.h"
-	"tinyxml.h"
-
-1697793711 c:\users\chera\documents\c++\projets en cours\project_vm\src\animation\sequenceanimation.h
-	<string>
-	<vector>
-	<map>
-	<SDL.h>
-	"Animation.h"
-
-1690118693 c:\users\chera\documents\c++\projets en cours\project_vm\src\animation\animation.h
-
-1697805001 c:\users\chera\documents\c++\projets en cours\project_vm\src\graphics\texturemanager.h
-	<iostream>
-	<string>
-	<SDL.h>
-	<SDL_image.h>
-	"tinyxml.h"
-	<map>
-	"engine.h"
-
-1687352977 c:\users\chera\documents\c++\projets en cours\project_vm\src\vender\tinyxlm\tinyxml.h
-	<ctype.h>
-	<stdio.h>
-	<stdlib.h>
-	<string.h>
-	<assert.h>
-	<string>
-	<iostream>
-	<sstream>
-	"tinystr.h"
-
-1687352977 c:\users\chera\documents\c++\projets en cours\project_vm\src\vender\tinyxlm\tinystr.h
-	<assert.h>
-	<string.h>
-
-1697793720 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\animation\spiritanimation.cpp
-	"SpiritAnimation.h"
-	<SDL.h>
-	"TextureManager.h"
-
-1697793703 c:\users\chera\documents\c++\projets en cours\project_vm\src\animation\spiritanimation.h
-	<string>
-	<SDL.h>
-	"Animation.h"
-
-1687521815 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\camera\camera.cpp
-	"Camera.h"
-
-1697793690 c:\users\chera\documents\c++\projets en cours\project_vm\src\camera\camera.h
-	<SDL.h>
-	"Vector2D.h"
-	"engine.h"
-
-1697804557 c:\users\chera\documents\c++\projets en cours\project_vm\src\physics\vector2d.h
-	<iostream>
-	<string>
-
-1697802563 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\collision\collisionhandler.cpp
-	"CollisionHandler.h"
-
-1697878500 c:\users\chera\documents\c++\projets en cours\project_vm\src\collision\collisionhandler.h
-	<SDL.h>
-	"GameMap.h"
-	"Layers.h"
-	"MapHandler.h"
-	"engine.h"
-	"TextureManager.h"
-
-1697878802 c:\users\chera\documents\c++\projets en cours\project_vm\src\map\maphandler.h
-	<map>
-	<string>
-	<vector>
-	"TextureManager.h"
-	"GameMap.h"
-	"Layers.h"
-	"tinyxml.h"
-
-1697878776 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\core\engine.cpp
-	"engine.h"
-
-1697793742 c:\users\chera\documents\c++\projets en cours\project_vm\src\sounds\soundsmanager.h
-	<iostream>
-	<string>
-	<map>
-	<SDL_mixer.h>
-
-1687352977 c:\users\chera\documents\c++\projets en cours\project_vm\src\factory\objectfactory.h
-	<string>
-	<map>
-	<functional>
-	<memory>
-	"GameObject.h"
-
-1697879355 c:\users\chera\documents\c++\projets en cours\project_vm\src\object\gameobject.h
-	<SDL.h>
-	"Object.h"
-	"Transform.h"
-
-1693993298 c:\users\chera\documents\c++\projets en cours\project_vm\src\object\object.h
-
-1697804742 c:\users\chera\documents\c++\projets en cours\project_vm\src\physics\transform.h
-	"Vector2D.h"
-
-1697793699 c:\users\chera\documents\c++\projets en cours\project_vm\src\entity\vegito.h
-	<SDL.h>
-	"TextureManager.h"
-	"RigidBody.h"
-	"Animation.h"
-	"Collider.h"
-	"SpiritAnimation.h"
-	"SequenceAnimation.h"
-	"Player.h"
-	"RigidBody.h"
-
-1697877845 c:\users\chera\documents\c++\projets en cours\project_vm\src\physics\rigidbody.h
-	"Vector2D.h"
-	"Vegito.h"
-	<iostream>
-	"CollisionHandler.h"
-	"Collider.h"
-	"Event.h"
-
-1687352977 c:\users\chera\documents\c++\projets en cours\project_vm\src\physics\collider.h
-
-1697793707 c:\users\chera\documents\c++\projets en cours\project_vm\src\event\event.h
-	<SDL.h>
-	"Engine.h"
-
-1690119056 c:\users\chera\documents\c++\projets en cours\project_vm\src\entity\player.h
-	"Entity.h"
-
-1690118986 c:\users\chera\documents\c++\projets en cours\project_vm\src\entity\entity.h
-	"GameObject.h"
-
-1691682850 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\entity\vegito.cpp
-	"Vegito.h"
-	"Camera.h"
-	"Collider.h"
-	"CollisionHandler.h"
-	"SoundsManager.h"
-	<iostream>
-	"ObjectFactory.h"
-	"tinyxml.h"
-
-1693916325 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\event\event.cpp
-	"Event.h"
-
-1687352977 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\factory\objectfactory.cpp
-	"ObjectFactory.h"
-
-1690131696 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\graphics\texturemanager.cpp
-	"TextureManager.h"
-	"Camera.h"
-
-1697802572 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\map\maphandler.cpp
-	"MapHandler.h"
-	<iostream>
-
-1693918316 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\sounds\soundsmanager.cpp
-	"SoundsManager.h"
-
-1687352977 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\vender\tinyxlm\tinystr.cpp
-	"tinystr.h"
-
-1687352977 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\vender\tinyxlm\tinyxml.cpp
-	<ctype.h>
-	<sstream>
-	<iostream>
-	"tinyxml.h"
-
-1687352977 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\vender\tinyxlm\tinyxmlerror.cpp
-	"tinyxml.h"
-
-1687352977 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\vender\tinyxlm\tinyxmlparser.cpp
-	<ctype.h>
-	<stddef.h>
-	"tinyxml.h"
-	<windows.h>
-
-1697793492 source:c:\users\chera\documents\c++\projets en cours\project_vm\src\timer\timer.cpp
-	"Timer.h"
 

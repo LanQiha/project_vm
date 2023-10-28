@@ -5,7 +5,7 @@ CollisionHandler* CollisionHandler::s_instance = nullptr;
 
 CollisionHandler::CollisionHandler()
 {
-    m_collision_layer = (TileLayer*)Engine::GetInstance()->GetMap()->GetMapLayers().front();
+    m_collision_layer = (TileLayer*)Engine::GetInstance()->GetMap()->get_map_layers().front();
     m_collision_map = m_collision_layer->get_tile_map();
 }
 
@@ -25,9 +25,7 @@ bool CollisionHandler::MapCollision_BottomTile(SDL_Rect game_object)
 
     //std::cout << top_tile << " " << bottom_tile << std::endl;
 
-    //collision on the left, right and top tile.
-
-    /*if(left_tile < 0)
+    if(left_tile < 0)
     {
         left_tile = 0;
     }
@@ -45,7 +43,7 @@ bool CollisionHandler::MapCollision_BottomTile(SDL_Rect game_object)
     if(bottom_tile > row_count)
     {
         bottom_tile = row_count;
-    }*/
+    }
 
     for(int i = left_tile + 1; i < right_tile; ++i)
     {
@@ -57,7 +55,7 @@ bool CollisionHandler::MapCollision_BottomTile(SDL_Rect game_object)
     return false;
 }
 
-/* bool CollisionHandler::MapCollision_RightTile(SDL_Rect game_object)
+bool CollisionHandler::MapCollision_RightTile(SDL_Rect game_object)
 {
     int tile_size = 32;
     int row_count = 20;
@@ -193,7 +191,7 @@ bool CollisionHandler::MapCollision_TopTile(SDL_Rect game_object)
         }
     }
     return false;
-} */
+}
 
 bool CollisionHandler::EntityCollision(SDL_Rect game_object_a, SDL_Rect game_object_b)
 {

@@ -4,8 +4,8 @@
 #include <iostream>
 #include <string>
 
-#include <SDL.h>
-#include <SDL_image.h>
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_image.h>
 
 #include "tinyxml.h"
 
@@ -17,9 +17,8 @@
 class TextureManager
 {
     public:
-        static TextureManager* GetInstance(){
-            return s_instance = (s_instance != nullptr)? s_instance : new TextureManager();
-        }
+        static TextureManager* GetInstance()
+        {return s_instance = (s_instance != nullptr)? s_instance : new TextureManager();}
 
         bool Load(std::string id, std::string filename);
         bool ParseTexture(std::string source);

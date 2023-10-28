@@ -1,21 +1,22 @@
 #ifndef GAMEOBJECT_H
 #define GAMEOBJECT_H
 
-#include <SDL.h>
+#include <SDL2/SDL.h>
 
 #include "Object.h"
 #include "Transform.h"
 
-// A game object is a fundamental concept in game development, referring to an entity or element within a video game world.
 
-struct Properties {
-    Properties(std::string textureId, float x, float y, int width, int height, SDL_RendererFlip flip = SDL_FLIP_NONE) {
-        TextureId = textureId; // ID of the game object
-        X = x; // Coordinate 'x' of the position of the game object
-        Y = y; // Coordinate 'y' of the position of the game object
-        Width = width; // Width of the game object
-        Height = height; // Height of the game object
-        Flip = flip; // Flip of the game object
+struct Properties
+{
+    Properties(std::string textureId, float x, float y, int width, int height, SDL_RendererFlip flip = SDL_FLIP_NONE)
+    {
+        TextureId = textureId;
+        X = x;
+        Y = y;
+        Width = width;
+        Height = height;
+        Flip = flip;
     }
 
     int Width, Height;
@@ -24,11 +25,6 @@ struct Properties {
     SDL_RendererFlip Flip;
 };
 
-/*
-In game development, a "texture ID" typically refers to a unique identifier or handle used to reference a texture in a graphics rendering system.
-*/
-
-// GameObject is a derived class
 class GameObject : public Object
 {
     public:
@@ -41,7 +37,7 @@ class GameObject : public Object
             m_origin = new Vector2D(px, py);
         }
 
-        inline Vector2D* GetOrigin(){return m_origin;}
+        inline Vector2D* get_origin(){return m_origin;}
 
         virtual void Draw(){};
         virtual void Update(float dt){};

@@ -1,14 +1,15 @@
 #ifndef MAPHANDLER_H
 #define MAPHANDLER_H
 
-#include <map>
 #include <string>
 #include <vector>
+#include <map>
 
-#include "TextureManager.h"
-#include "GameMap.h"
 #include "Layers.h"
+#include "GameMap.h"
 #include "tinyxml.h"
+#include "TextureManager.h"
+
 
 struct Tileset
 {
@@ -46,13 +47,13 @@ class TileLayer : public Layers
 class MapParser
 {
     public:
-        inline static MapParser* GetInstance()
+        inline static MapParser* get_instance()
         {return s_instance = (s_instance != nullptr)? s_instance : new MapParser();}
 
-        bool Load();
+        bool load();
         void clean();
 
-        inline GameMap* GetMap(std::string id){return m_map[id];}
+        inline GameMap* get_map(std::string id){return m_map[id];}
 
     public:
         bool parse(std::string id, std::string source);

@@ -74,9 +74,9 @@ MapParser::MapParser()
     //ctor
 }
 
-bool MapParser::Load()
+bool MapParser::load()
 {
-    if(!parse("Level_1", "map.tmx"))
+    if(!parse("level_1", "map.tmx"))
     {
         return false;
     }
@@ -117,7 +117,7 @@ bool MapParser::parse(std::string id, std::string source)
         if(e->Value() == std::string("layer"))
         {
             TileLayer* tile_layer = parse_tile_layer(e, tileset, tile_size, col_count, row_count);
-            game_map->m_mapLayers.push_back(tile_layer);
+            game_map->m_map_layers.push_back(tile_layer);
         }
     }
 

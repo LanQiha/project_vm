@@ -29,9 +29,13 @@
 					<Add directory="src/camera" />
 					<Add directory="src/Factory" />
 					<Add directory="src/states" />
+					<Add directory="src/widgets" />
+					<Add directory="src/commentary" />
+					<Add directory="../../../../../lib/box2d-2.4.1/include/box2d" />
+					<Add directory="C:/lib/box2d-2.4.1/include/box2d" />
+					<Add directory="../../../../../lib/box2d-2.4.1/include" />
 					<Add directory="src/entity" />
 					<Add directory="src/event" />
-					<Add directory="../../../../../../lib/SDL2-devel-2.26.5-mingw/SDL2-2.26.5/x86_64-w64-mingw32/include/SDL2" />
 				</Compiler>
 				<Linker>
 					<Add option="-lmingw32" />
@@ -39,8 +43,6 @@
 					<Add option="-lSDL2main" />
 					<Add option="-lSDL2_image" />
 					<Add directory="../../../../../lib/SDL2-devel-2.26.5-mingw/SDL2-2.26.5/x86_64-w64-mingw32/lib" />
-					<Add directory="../../../../../lib/box2d-2.4.1/build" />
-					<Add directory="../../../../../../lib/SDL2-devel-2.26.5-mingw/SDL2-2.26.5/x86_64-w64-mingw32/lib" />
 				</Linker>
 			</Target>
 			<Target title="Release">
@@ -136,6 +138,8 @@
 		<Unit filename="src/vender/TinyXLM/tinyxml.h" />
 		<Unit filename="src/vender/TinyXLM/tinyxmlerror.cpp" />
 		<Unit filename="src/vender/TinyXLM/tinyxmlparser.cpp" />
+		<Unit filename="src/widgets/Button.cpp" />
+		<Unit filename="src/widgets/Button.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
