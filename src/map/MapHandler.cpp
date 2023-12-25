@@ -150,6 +150,8 @@ Tileset MapParser::parse_tileset(TiXmlElement* xml_tileset)
               << ", size : " << tileset.tile_size << ", tile_count : " << tileset.tile_count << ", col_count : " << tileset.col_count
               << ", row_count : " << tileset.row_count << ", last_id : " << tileset.last_id << std::endl;
 
+
+
     return tileset;
 }
 
@@ -191,8 +193,9 @@ TileLayer* MapParser::parse_tile_layer(TiXmlElement* xml_layer, TilesetList tile
 
             std::cout << tile_map[row][col] << " ";
 
-            if(!iss.good())
+            if (!iss.good())
             {
+                std::cerr << "Error: Failed to read tile data!" << std::endl;
                 break;
             }
         }
