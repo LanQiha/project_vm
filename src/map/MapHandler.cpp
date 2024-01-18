@@ -22,6 +22,7 @@ void TileLayer::render()
     {
         for(int j = 0; j < m_col_count; j++)
         {
+            std::cout << m_col_count << " ";
             int tile_id = m_tile_map[i][j];
 
             if(tile_id == 0)
