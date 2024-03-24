@@ -61,7 +61,7 @@ bool Engine::Init()
 
     m_level_map = MapParser::get_instance()->get_map("level_1");
 
-    TextureManager::GetInstance()->ParseTexture("textures.tmx");
+    // TextureManager::GetInstance()->ParseTexture("textures.tmx");
 
     TextureManager::GetInstance()->Load("plains_day", "assets/images/plains_day.png");
     TextureManager::GetInstance()->Load("vegito_stand", "assets/animations/vegito/vegito_ssj_std.png");

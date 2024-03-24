@@ -22,7 +22,7 @@ void TileLayer::render()
     {
         for(int j = 0; j < m_col_count; j++)
         {
-            std::cout << m_col_count << " ";
+            // std::cout << m_col_count << " ";
             int tile_id = m_tile_map[i][j];
 
             if(tile_id == 0)
@@ -192,7 +192,7 @@ TileLayer* MapParser::parse_tile_layer(TiXmlElement* xml_layer, TilesetList tile
             std::stringstream convertor(id);
             convertor >> tile_map[row][col];
 
-            std::cout << tile_map[row][col] << " ";
+            // std::cout << tile_map[row][col] << " ";
 
             if (!iss.good())
             {
@@ -202,7 +202,7 @@ TileLayer* MapParser::parse_tile_layer(TiXmlElement* xml_layer, TilesetList tile
         }
     }
 
-    std::cout << "cnt : " << cnt << std::endl;
+    // std::cout << "cnt : " << cnt << std::endl;
 
     return (new TileLayer(tile_size, row_count, col_count, tile_map, tilesets));
 }
